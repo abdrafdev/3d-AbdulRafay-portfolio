@@ -23,8 +23,15 @@ import {
   jobit,
   tripguide,
   threejs,
+  
 } from "../assets";
-
+import crypto from "../assets/crypto.png";
+import meat from "../assets/meat.jpg";
+import raziqon from "../assets/raziqon.png";
+import ml from "../assets/ml.png";
+import hotel from "../assets/hotel.jpg";
+import movie from "../assets/movie.png";
+import earn from "../assets/earn.png";
 export const navLinks = [
   {
     id: "about",
@@ -189,39 +196,81 @@ const projects = [
     description:
       "Blockchain-based tax transparency platform with MetaMask integration, real-time dashboards, and PPKR token minting 1:1 with PKR payments. Revolutionizing tax collection with blockchain transparency.",
     tags: [
-      {
-        name: "blockchain",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "web3",
-        color: "green-text-gradient",
-      },
-      {
-        name: "smartcontracts",
-        color: "pink-text-gradient",
-      },
+      { name: "blockchain", color: "blue-text-gradient" },
+      { name: "web3", color: "green-text-gradient" },
+      { name: "smartcontracts", color: "pink-text-gradient" },
     ],
     image: carrent,
     source_code_link: "https://paktaxchain.vercel.app/",
   },
   {
+    name: "Raziqon Blockchain",
+    description:
+      "Custom blockchain built from scratch in Rust. Features wallet creation, token transfers, and balance tracking via CLI. Future roadmap includes networking, consensus, and full decentralized deployment.",
+    tags: [
+      { name: "rust", color: "blue-text-gradient" },
+      { name: "blockchain", color: "green-text-gradient" },
+      { name: "cli", color: "pink-text-gradient" },
+    ],
+    image: raziqon,
+    source_code_link: "https://github.com/abdrafdev/Raziqon/tree/master",
+  },
+  {
+    name: "AI/ML Projects",
+    description:
+      "A collection of applied machine learning projects including Random Forest classifiers, Explainable AI (XAI) experiments, and predictive modeling. Focused on combining interpretability with performance.",
+    tags: [
+      { name: "machinelearning", color: "blue-text-gradient" },
+      { name: "python", color: "green-text-gradient" },
+      { name: "xai", color: "pink-text-gradient" },
+    ],
+    image: ml,
+    source_code_link: "https://github.com/abdrafdev/machine-learning-projects",
+  },
+    {
+    name: "Crypt-Forex-Web",
+    description:
+      "A web platform for crypto and forex trading dashboards. Features real-time market data, interactive charts, and secure wallet integration for simulated trading experiences. both crypto and forex in one platform. You can check it on My Github",
+    tags: [
+      { name: "forex", color: "blue-text-gradient" },
+      { name: "crypto", color: "green-text-gradient" },
+      { name: "dashboard", color: "pink-text-gradient" },
+    ],
+    image: crypto,
+    source_code_link: "https://github.com/abdrafdev/Crypt-Forex-Web",
+  },
+    {
+    name: "Movie Downloader (Laravel)",
+    description:
+      "Web application built with Laravel that allows users to download and manage movies. Features authentication, search, categorized movie lists, and a responsive user interface.",
+    tags: [
+      { name: "laravel", color: "blue-text-gradient" },
+      { name: "php", color: "green-text-gradient" },
+      { name: "fullstack", color: "pink-text-gradient" },
+    ],
+    image: movie,
+    source_code_link: "https://github.com/abdrafdev/Movie-Downloader-Laravel",
+  },
+    {
+    name: "Butcher Service",
+    description:
+      "Service platform for managing butcher shop orders and deliveries. Includes product catalog, order tracking, and customer management for a smooth e-commerce-like experience.",
+    tags: [
+      { name: "ecommerce", color: "blue-text-gradient" },
+      { name: "nodejs", color: "green-text-gradient" },
+      { name: "mongodb", color: "pink-text-gradient" },
+    ],
+    image: meat,
+    source_code_link: "https://github.com/abdrafdev/Butcher-Service",
+  },
+  {
     name: "3D Book Slider",
     description:
-      "Interactive 3D book slider using Three.js and React for a modern, realistic UI experience. Features smooth animations, realistic page turning effects, and responsive design.",
+      "Interactive 3D book slider using Three.js and React for a modern, realistic UI experience. Features smooth animations, realistic page turning effects, and responsive design and you can also visit this it also has my name on the cover and you can open and turn the pages by clicking with sound effects.",
     tags: [
-      {
-        name: "threejs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react",
-        color: "green-text-gradient",
-      },
-      {
-        name: "3danimation",
-        color: "pink-text-gradient",
-      },
+      { name: "threejs", color: "blue-text-gradient" },
+      { name: "react", color: "green-text-gradient" },
+      { name: "3danimation", color: "pink-text-gradient" },
     ],
     image: jobit,
     source_code_link: "https://3d-book-slider-alpha.vercel.app/",
@@ -231,22 +280,26 @@ const projects = [
     description:
       "Comprehensive web-based system for hotel reservations, room management, and customer tracking. Features real-time availability, booking management, and analytics dashboard.",
     tags: [
-      {
-        name: "fullstack",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "pink-text-gradient",
-      },
+      { name: "fullstack", color: "blue-text-gradient" },
+      { name: "mongodb", color: "green-text-gradient" },
+      { name: "nodejs", color: "pink-text-gradient" },
     ],
-    image: tripguide,
+    image: hotel,
     source_code_link: "https://github.com/abdrafdev/Hotel-management-system",
   },
+  {
+      name: "Play2EarnX",
+    description:
+      "Blockchain-based gaming platform where players earn cryptocurrency rewards through gameplay. Features NFT-based assets, in-game token economy, and smart contract integration for secure, transparent reward distribution.",
+    tags: [
+      { name: "blockchain", color: "blue-text-gradient" },
+      { name: "nft", color: "green-text-gradient" },
+      { name: "gaming", color: "pink-text-gradient" },
+    ],
+    image: earn,
+    source_code_link: "https://github.com/abdrafdev/Play2EarnX",
+  }
 ];
+
 
 export { services, technologies, experiences, testimonials, projects };
